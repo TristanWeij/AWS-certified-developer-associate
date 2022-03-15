@@ -1,26 +1,24 @@
 # AWS Regions
 
 ## How to choose an AWS region?
-* Compliance with data governance and legal requirements
+* Compliance with data governance and legal requirements <br>
 Data never leaves a region without your explicit permission.
-* Proximity to customers
+* Proximity to customers <br>
 Reduced latency.
-* Available services within a region
+* Available services within a region <br>
 New services and new features aren't available in every region.
-* Pricing
+* Pricing <br>
 Pricing varies region to region and is transparant in the service pricing page.
 
 ## AWS availability zones
 Each region has many availability zones:
+
 * AWS region: Sydney (ap-southeast-2):
 	* ap-southeast-2a
 	* ap-southeast-2b
 	* ap-southeast-2c
 
-Each availability zone (AZ) is one or more discrete data centers with redundant power, networking and connectivity.
-
-The data centers are separated from each other, so that they are isolated from disasters.
-
+Each availability zone (AZ) is one or more discrete data centers with redundant power, networking and connectivity. The data centers are separated from each other, so that they are isolated from disasters.
 They are connected with high bandwidth, ultra-low latency networking.
 
 ## AWS Points of Presence (Edge locations)
