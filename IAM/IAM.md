@@ -37,3 +37,15 @@ In AWS you apply the **least privilege principle**: Don't give more permissions 
 	]
 }
 ```
+
+## IAM Policy Structure
+Consists of: 
+* Version<br>
+* Id (Optional) <br>
+* Statements (Required) <br>
+	* Sid: Id for the statement (Optional).
+	* Effect: Whether the statement allows or denies access (Allow or Deny).
+	* Principal: Account/User/Role to which this policy is attached to.
+	* Action: List of actions this policy allows or denies.
+	* Resource: List of resources to which the actions applied to.
+	* Condition: Conditions for when this policy is in effect. (Optional)
