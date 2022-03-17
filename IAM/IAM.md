@@ -1,6 +1,17 @@
 # Identity and Access Management (IAM)
 Root account created by default, shouldn't be used or shared.
 
+## IAM Guidelines and Best Practices
+* Don't use the root account except for AWS account setup <br>
+* One physical user = One AWS user <br>
+* Assign users to groups and assign permissions to groups <br>
+* Create a strong password policy <br>
+* Use and enforce the use of MFA <br>
+* Create and use roles for giving permissions to AWS services <br>
+* Use access keys for programmatic access (CLI / SDK) <br>
+* Audit permissions of your account with the IAM credentials report <br>
+* Never share IAM users & access keys <br>
+
 ## Users
 Users are people within your organization, and can be grouped. Users don't have to belong to a group, and users can belong to multiple groups.
 
@@ -101,3 +112,10 @@ Embedded within your application. Supports:
 * SDKs (JavaScript, PHP, Go) <br>
 * Mobile SDKs (Android, iOS) <br>
 * IoT Device SDKs (Embedded C, Arduino) <br>
+
+## IAM Security Tools
+* IAM Credentials report (account-level)
+	* A report that lists all your account's users and the status of their various credentials.
+* IAM Access advisor (user-level)
+	* Access advisors shows the service permissions granted to a user and when those services were last accessed.
+	* You can use this information to revise your policies.
