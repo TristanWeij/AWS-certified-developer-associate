@@ -1,6 +1,15 @@
 # Identity and Access Management (IAM)
 Root account created by default, shouldn't be used or shared.
 
+## Summary
+* Users: Mapped to a physical user, has a password for the AWS console <br>
+* Groups: Contains user only <br>
+* Policies: JSON document that outlines permissions for users or groups <br>
+* Roles: for EC2 instances or AWS services <br>
+* Security: MFA + Password policy <br>
+* Access keys: Access AWS using the CLI or SDK <br>
+* Audit: IAM credential reports & IAM access advisor <br>
+
 ## IAM Guidelines and Best Practices
 * Don't use the root account except for AWS account setup <br>
 * One physical user = One AWS user <br>
