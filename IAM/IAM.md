@@ -7,6 +7,13 @@ Users are people within your organization, and can be grouped. Users don't have 
 ## Groups
 Groups can only contain users, not other groups.
 
+## Roles
+Some AWS services will need to perform actions on your behalf. To do so, we will assign permissions to AWS services with IAM Roles. <br>
+Common roles:
+* EC2 Instance roles <br>
+* Lambda function roles <br>
+* Roles for CloudFormation <br>
+
 ## Permissions
 Users or groups can be assigned JSON documents called policies. These policies define the permissions of the users. <br>
 In AWS you apply the **least privilege principle**: Don't give more permissions than a user needs.
@@ -74,7 +81,23 @@ If a password is stolen or compromised, the account is not compromised.
 * Virtual MFA device (Support for multiple tokens on a single device) <br>
 * Universal 2nd Factor (U2F) Security key (Support for multiple root and IAM users using a single security key) <br>
 	* E.G. YubiKey by Yubico (3rd party). 
-* Hardware Key Fob MFA device <br>
-* Hardware Key Fob MFA device for AWS GovCloud <br>
+* Hardware Key Fob MFA device or Hardware Key Fob MFA device for AWS GovCloud <br>
 
+## How can users access AWS?
+To access AWS, you have three options:
+* AWS management console (Password + MFA) <br>
+* AWS CLI (Access Keys) <br>
+* AWS SDK (Access Keys) <br>
 
+Access keys are generated through the AWS console. Users manage their own access keys
+
+## What is the AWS CLI?
+A tool that enables you to interact with AWS services using commands in your command line shell. <br>
+Direct access to the public APIs of AWS services. You can develop scripts to manage your resources.
+
+## What is the AWS SDK?
+AWS software development kit. Language-specific APIs. Enables you access and manage AWS services programatically. <br>
+Embedded within your application. Supports:
+* SDKs (JavaScript, PHP, Go) <br>
+* Mobile SDKs (Android, iOS) <br>
+* IoT Device SDKs (Embedded C, Arduino) <br>
