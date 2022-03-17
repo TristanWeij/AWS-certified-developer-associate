@@ -9,7 +9,7 @@ Groups can only contain users, not other groups.
 
 ## Permissions
 Users or groups can be assigned JSON documents called policies. These policies define the permissions of the users. <br>
-In AWS you apply the least privilege principle: Don't give more permissions than a user needs.
+In AWS you apply the **least privilege principle**: Don't give more permissions than a user needs.
 
 ```json
 {
