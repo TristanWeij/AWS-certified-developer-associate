@@ -17,3 +17,11 @@ Controls the EBS behaviour when an EC2 instance terminates. By default, the root
 
 ## EBS Snapshots
 Make a backup (snapshot) of your EBS volume at a point in time. Not necessary to detach volume to do snapshot, but recommended. Can copy snapshots across AZ or region
+
+## EC2 Instance Store
+EBS volumes are network drives with good but limited performance. If you need a high-performance hardware disk, use EC2 instance store:
+* Better I/O performance <br>
+* EC2 Instance Store lose their storage if they're stopped (Ephemeral) <br>
+* Good for buffer / cache / scratch data / temporary content <br>
+* Risk of data loss if hardware fails <br>
+* Backups and replication are your responsibility
