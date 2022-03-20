@@ -25,3 +25,10 @@ EBS volumes are network drives with good but limited performance. If you need a 
 * Good for buffer / cache / scratch data / temporary content <br>
 * Risk of data loss if hardware fails <br>
 * Backups and replication are your responsibility
+
+## EBS Multi-Attach - io1/io2 family
+Attach the same EBS volume to multiple EC2 instances in the same AZ. Each instance has full read & write permissions to the volume:
+* Achieve higher availability in clustered Linux applications (ex: Teradata) <br>
+* Applications must manage concurrent write operations
+
+Must use a file system that's cluster aware (not XFS, EX4, etc)
