@@ -1,4 +1,4 @@
-## Elastic Compute Cloud (EC2) Instance Types
+# Elastic Compute Cloud (EC2) Instance Types
 You can use different types of EC2 instances that are optimised for different use cases. <br>
 AWS has the following naming convention:
 * m5.2xlarge
