@@ -28,3 +28,22 @@ POSIX file system (~Linux) that has a standard file API. File system scales auto
 * Storage tiers (lifecycle management feature; Move file after N days)
     * Standard: for frequently accessed files
     * Infrequent access: (EFS-IA); cost to retrieve files, lower price to store
+
+## EBS vs EFS - Elastic Block Storage
+* EBS volumes:
+    * Can be attached to only one instance at a time <br>
+    * Are locked at the availability zone <br>
+    * gp2: I/O increases if the disk size increases <br>
+    * io1: Can increase I/O independently
+* To migrate an EBS volume across AZ
+    * Take a snapshot
+    * Restore the snapshot to another AZ
+    * EBS backups use I/O and you shouldn't run them while your application is handling a lot of traffic
+* Root EBS volumes of instances get terminated by default if the EC2 instance gets terminated (you can disable that)
+
+* EFS:
+    * Mounting 100s of instances across AZ
+    * EFS share website files (WordPress)
+    * Only for Linux instances (POSIX)
+* EFS has a higher price point than EBS
+* Can leverage EFS-IA for cost savings
